@@ -1,0 +1,12 @@
+
+h1 {
+  font-size: 70px;
+  color: white;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  margin-top: 0px;
+  height: 200px;
+  background-color: rgb(43, 41, 73);
+}

@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name":"Golden Retriever",
+        "image": "https://core.pupcdn.com/assets/puppyspot/img/schema/breed/golden-retriever_aspect-ratio_1x1.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Boxer",
+        "image": "http://photos.puppyspot.com/breeds/216/card/500000191_medium.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Bulldog",
+        "image": "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Bulldog-3-2.jpg"
+    },
+    {
+        "id": 4,
+        "name":"French Bulldog",
+        "image": "https://peee.me/thumb/veh1.jpg"
+    },
+    {
+        "id": 5,
+        "name":"German Shepherd",
+        "image": "https://g77v3827gg2notadhhw9pew7-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/german-shepherd-dog-1071592_1920-1024x683.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Greyhound",
+        "image": "https://i.redd.it/181okqixf6wy.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Pitbull",
+        "image": "https://i.pinimg.com/originals/8b/ec/60/8bec60c8d5343aea86766ca08e3cca30.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Pitbull",
+        "image": "http://fallinpets.com/wp-content/uploads/2016/11/funny-pitbull-puppy.jpg"
+    },
+    {
+        "id": 9,
+        "name":"Pitbull",
+        "image": "http://photos.puppyspot.com/breeds/245/card/500000291_medium.jpg"
+    }
+]
