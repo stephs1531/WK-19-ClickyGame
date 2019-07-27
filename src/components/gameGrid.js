@@ -6,24 +6,63 @@ class Game extends React.Component {
     state={
         correct: 0,
         wins: 0,
+        losses: 0,
         puppies: []
+    };
+
+    shuffle = function (array) {
+
+        var currentIndex = array.length;
+        var temporaryValue, randomIndex;
+    
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+    
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+    
+        return array;
+    
     };
 
     puppyClick = (event) => {
         console.log("Hi i'm clicked!");
-        // console.log(event.target.getAttribute("puppyId"))
         
         //conditional logic
+        //check to see if the puppy you clicked is in the new puppies array
         if (this.state.puppies.includes(event.target.getAttribute("puppyId"))) {
-            console.log("restart game");
             console.log(event.target.getAttribute("puppyId"));
             console.log(this.state.puppies);
+            //reset game if you click on a puppy twice
+            this.setState({correct: 0});
+            this.setState({losses: this.state.losses +1})
+            this.setState({puppies: []});
+
         } else {
+            //get the id of the puppy that's been clicked and push it to the new puppies array
             this.state.puppies.push(event.target.getAttribute("puppyId"));
             this.setState({ correct: this.state.correct + 1 });
+            //reset the game if you click all the puppies once
+             if (this.state.puppies.length > 8) {
+                console.log("You win!")
+                this.setState({wins: this.state.wins +1})
+                this.setState({correct: 0});
+                this.setState({puppies: []});
+            }
 
         }
-            //see if id already exists)
+        
+        //shuffle puppies logic
+        this.shuffle(puppypics);
+   
+
+
 
     }
     //map over puppypics.json and assign each image to a card
@@ -34,7 +73,8 @@ class Game extends React.Component {
        <>
             <div className="score">
                     <h3>Score:</h3>
-                    <h5>Correct: {this.state.correct} Incorrect: {this.state.incorrect}</h5>
+                    <h5>Correct: {this.state.correct}</h5>
+                    <h6>Wins: {this.state.wins} Losses: {this.state.losses}</h6>
             </div>
             <div className="game-container">
                 {puppyImages}
