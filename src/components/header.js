@@ -7,7 +7,8 @@ class Header extends React.Component {
         return (
             <div className="row jumbotron valign-wrapper">
                 <div className="score">
-                    <h1>React Memory Game</h1>
+                    <h1>Puppy Memory Game</h1>
+                    <p>click on each puppy once and only once</p>
                     
                 </div>
             </div>

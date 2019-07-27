@@ -3,11 +3,18 @@ h1 {
   font-size: 70px;
   color: white;
   margin: 0 auto;
+  font-family: 'Luckiest Guy', cursive;
 }
 
-h3, h5, h6 {
+p {
+  color: white;
+  font-size: 25px;
+}
+
+h3, h4, h5, h6, p {
   margin: 0 auto;
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
   /* color: white; */
 }
 
@@ -16,7 +23,7 @@ h3 {
 }
 .jumbotron {
   margin-top: 0px;
-  padding: 40px;
+  padding: 100px;
   background-color: rgb(43, 41, 73);
   flex-direction: column;
 }
@@ -34,3 +41,6 @@ h3 {
   flex-wrap: wrap;
 }
 
+.score {
+  padding: 30px;
+}

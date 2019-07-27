@@ -72,9 +72,8 @@ class Game extends React.Component {
         //return grid of cards with puppy images
        <>
             <div className="score">
-                    <h3>Score:</h3>
-                    <h5>Correct: {this.state.correct}</h5>
-                    <h6>Wins: {this.state.wins} Losses: {this.state.losses}</h6>
+                    <h4>Correct: {this.state.correct}</h4>
+                    <h5>Wins: {this.state.wins} Losses: {this.state.losses}</h5>
             </div>
             <div className="game-container">
                 {puppyImages}
