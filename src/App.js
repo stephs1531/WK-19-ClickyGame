@@ -4,7 +4,10 @@ import './App.css';
 import Header from './components/header'
 import Game from './components/gameGrid'
 
-function App() {
+class App extends React.Component {
+ 
+
+render () {
   return (
     <div>
       <Header />
@@ -13,6 +16,8 @@ function App() {
       </div>
     </div>
   );
+}
+  
 }
 
 export default App;
