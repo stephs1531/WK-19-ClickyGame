@@ -25,7 +25,7 @@ h3 {
 }
 .jumbotron {
   margin-top: 0px;
-  padding: 100px;
+  padding: 50px;
   background-color: rgb(43, 41, 73);
   flex-direction: column;
 }
@@ -40,9 +40,28 @@ h3 {
 .game-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .score {
   padding: 30px;
+}
+
+@media screen and (max-width: 752px) and (min-width: 378px) {
+  .card {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 377px) and (min-width: 0px) {
+  .card {
+    max-width: 200px;
+    max-height: 200px;
+    padding: 5px;
+  }
 }
